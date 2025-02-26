@@ -16,6 +16,16 @@ form {
   font-weight: bold;
   margin-bottom: 20px;
 }
+.or {
+  text-align: center;
+}
+.question {
+  font-size: 15px;
+}
+span {
+  color: #f2796e;
+  cursor: pointer;
+}
 label {
   display: block;
   margin-bottom: 5px;
