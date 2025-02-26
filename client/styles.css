@@ -130,3 +130,12 @@ button {
 button:hover {
   opacity: 0.8;
 }
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .content,
+  .form {
+    width: 100%;
+  }
+}
