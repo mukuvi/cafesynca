@@ -25,7 +25,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.logo {
+  display: flex;
+  justify-content: space-around;
+}
 .text {
   text-align: center;
   color: #fff;
