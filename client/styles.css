@@ -18,4 +18,6 @@ form {
 }
 form div input {
   width: 100%;
+  height: 40px;
+  border-radius: 8px;
 }
