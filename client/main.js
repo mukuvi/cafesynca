@@ -12,11 +12,10 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (username.value === "") {
     errorMsg[0].innerHTML = "username cannot be blank";
-  } else if (email.value === "") {
-    errorMsg[1].innerHTML = "email cannot be blank";
-  } else if (password.value === "") {
-    errorMsg[2].innerHTML = "password cannot be blank";
+    failureIcon[0].style.opacity = "1";
   } else {
-    alert("done");
+    errorMsg[0].innerHTML = "";
+    failureIcon[0].style.opacity = "0";
+    successIcon[0].style.opacity = "1";
   }
 });
