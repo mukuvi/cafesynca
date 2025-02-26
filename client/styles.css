@@ -10,17 +10,25 @@ body {
   display: flex;
 }
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #f2796e;
   width: 55%;
   min-height: 100vh;
   padding: 10px 20px;
 }
 .image {
-  background-image: url("./images/bc3.jpg");
+  background-image: url("./images/coffee.png");
   height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.text {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
 }
 form {
   display: flex;
