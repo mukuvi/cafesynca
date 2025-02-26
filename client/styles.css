@@ -29,6 +29,9 @@ form div input {
   padding: 0 30px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+input:focus {
+  border: 2px solid #f2796e;
+}
 form div {
   position: relative;
   margin-bottom: 15px;
@@ -60,4 +63,12 @@ button {
   background-color: #f2796e;
   border: 2px solid #f2796e;
   border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+button:hover {
+  opacity: 0.8;
 }
