@@ -37,3 +37,27 @@ form div i {
   position: absolute;
   padding: 10px;
 }
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+.failure-icon,
+.error {
+  color: red;
+}
+.success-icon {
+  color: green;
+}
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+button {
+  width: 100%;
+  margin-top: 15px;
+  height: 45px;
+  background-color: #f2796e;
+  border: 2px solid #f2796e;
+  border-radius: 8px;
+}
