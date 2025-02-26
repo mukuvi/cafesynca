@@ -138,4 +138,7 @@ button:hover {
   form {
     width: 100%;
   }
+  .btn {
+    flex-direction: column;
+  }
 }
