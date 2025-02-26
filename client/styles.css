@@ -6,8 +6,27 @@
 body {
   font-family: sans-serif;
 }
+.container {
+  display: flex;
+}
+.content {
+  background-color: #f2796e;
+  width: 55%;
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+.image {
+  background-image: url("./images/bc3.jpg");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 form {
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 50px;
 }
@@ -29,7 +48,9 @@ form {
 }
 .btn-1,
 .btn-2 {
+  padding: 10px 5px;
   display: flex;
+  gap: 15px;
   align-items: center;
   justify-content: center;
   border: 2px solid #c4c4c4;
@@ -37,7 +58,10 @@ form {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
-
+.btn-2 {
+  background-color: #4f70b5;
+  color: #fff;
+}
 span {
   color: #f2796e;
   cursor: pointer;
