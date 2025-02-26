@@ -2,5 +2,6 @@ let id = (id) => document.getElementById("id");
 let username = id("username"),
   email = id("email'"),
   password = id("password"),
-  erroMsg = document.getElementsByClassName("error");
-erroMsg = ["error", "error", "error"];
+  errorMsg = document.getElementsByClassName("error");
+errorMsg = ["error", "error", "error"];
+errorMsg[1] = "hhhhhhh";
