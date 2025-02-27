@@ -15,3 +15,12 @@ $bp: (
   tablet: 768px,
   desktop: 1440px,
 );
+@mixin query($screen) {
+  @each $key, $value in $bp {
+    @if ($screen==$key) {
+      @media (max-width: $value) {
+        @content;
+      }
+    }
+  }
+}
