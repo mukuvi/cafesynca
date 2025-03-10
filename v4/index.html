@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Ngandu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="loader">
+      <div class="loader-content">
+        <h2 class="title">
+          Loading<span class="dot">.</span><span class="dot">.</span
+          ><span class="dot">.</span>
+        </h2>
+      </div>
+    </div>
+
+    <header>
+      <nav>
+        <div class="logo">
+          <span class="bracket"></span>James Ngandu<span class="bracket"></span>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section active">
+        <div class="container">
+          <div class="home-content">
+            <div class="text-content">
+              <h1 class="title">
+                Hi, I'm <span class="highlight">James</span>
+              </h1>
+              <h2 class="subtitle">Full Stack Developer</h2>
+              <p class="description">
+                I build modern, responsive web applications with the MERN stack.
+              </p>
+              <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="cube-container">
+                <div class="cube">
+                  <div class="face front"><i class="fab fa-react"></i></div>
+                  <div class="face back"><i class="fab fa-node-js"></i></div>
+                  <div class="face right"><i class="fab fa-js"></i></div>
+                  <div class="face left"><i class="fab fa-html5"></i></div>
+                  <div class="face top"><i class="fab fa-css3-alt"></i></div>
+                  <div class="face bottom"><i class="fab fa-github"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <div class="image-container">
+                <div class="image-placeholder">
+                  <i class="fas fa-user"></i>
+                </div>
+              </div>
+            </div>
+            <div class="about-text">
+              <h3>Software Developer & Problem Solver</h3>
+              <p>
+                I'm a passionate full-stack developer with expertise in the MERN
+                stack (MongoDB, Express.js, React, Node.js). With a strong
+                foundation in both front-end and back-end technologies, I create
+                seamless, responsive, and user-friendly web applications.
+              </p>
+              <p>
+                My approach combines technical skill with creativity to solve
+                complex problems and deliver exceptional user experiences. I'm
+                constantly learning and adapting to new technologies to stay at
+                the forefront of web development.
+              </p>
+              <div class="about-details">
+                <div class="detail">
+                  <span class="label">Name:</span>
+                  <span class="value">Alex Johnson</span>
+                </div>
+                <div class="detail">
+                  <span class="label">Email:</span>
+                  <span class="value">alex@example.com</span>
+                </div>
+                <div class="detail">
+                  <span class="label">Location:</span>
+                  <span class="value">San Francisco, CA</span>
+                </div>
+                <div class="detail">
+                  <span class="label">Availability:</span>
+                  <span class="value available">Available for freelance</span>
+                </div>
+              </div>
+              <div class="cta-buttons">
+                <a href="#" class="btn primary">Download CV</a>
+                <a href="#skills" class="btn secondary">My Skills</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <div class="skills-content">
+            <div class="skills-intro">
+              <p>
+                I've honed my skills in modern web development technologies,
+                with a focus on the MERN stack. My expertise spans both
+                front-end and back-end development, allowing me to build
+                complete, scalable applications.
+              </p>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card" data-skill="Front-End">
+                <div class="skill-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <h3>Front-End</h3>
+                <ul>
+                  <li>React.js</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>HTML5 & CSS3</li>
+                  <li>Redux</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+              <div class="skill-card" data-skill="Back-End">
+                <div class="skill-icon">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <h3>Back-End</h3>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>RESTful APIs</li>
+                  <li>Authentication</li>
+                  <li>Server Architecture</li>
+                </ul>
+              </div>
+              <div class="skill-card" data-skill="Database">
+                <div class="skill-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3>Database</h3>
+                <ul>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>Database Design</li>
+                  <li>Data Modeling</li>
+                  <li>Query Optimization</li>
+                </ul>
+              </div>
+              <div class="skill-card" data-skill="Tools">
+                <div class="skill-icon">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <h3>Tools & Deploy</h3>
+                <ul>
+                  <li>Git & GitHub</li>
+                  <li>Webpack</li>
+                  <li>npm</li>
+                  <li>Heroku</li>
+                  <li>Netlify</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card" data-category="web">
+              <div class="project-img">
+                <div class="placeholder-img">
+                  <i class="fas fa-code"></i>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>E-Commerce Platform</h3>
+                <p>
+                  A full-featured e-commerce platform built with React, Node.js,
+                  Express, and MongoDB. Features include user authentication,
+                  product search, shopping cart, and payment integration.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn small">View Demo</a>
+                  <a href="#" class="btn small outline">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card" data-category="web">
+              <div class="project-img">
+                <div class="placeholder-img">
+                  <i class="fas fa-tasks"></i>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Task Management App</h3>
+                <p>
+                  A collaborative task management application with real-time
+                  updates using Socket.io. Built with the MERN stack and
+                  features drag-and-drop functionality.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Express</span>
+                  <span>Socket.io</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn small">View Demo</a>
+                  <a href="#" class="btn small outline">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card" data-category="mobile">
+              <div class="project-img">
+                <div class="placeholder-img">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Fitness Tracker Mobile App</h3>
+                <p>
+                  A React Native fitness tracking application with workout
+                  planning, progress tracking, and social sharing features.
+                </p>
+                <div class="project-tags">
+                  <span>React Native</span>
+                  <span>Node.js</span>
+                  <span>Firebase</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn small">View Demo</a>
+                  <a href="#" class="btn small outline">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card" data-category="other">
+              <div class="project-img">
+                <div class="placeholder-img">
+                  <i class="fas fa-robot"></i>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>AI Chat Assistant</h3>
+                <p>
+                  An AI-powered chat assistant built with Node.js and integrated
+                  with various NLP services. Features include intent recognition
+                  and contextual responses.
+                </p>
+                <div class="project-tags">
+                  <span>Node.js</span>
+                  <span>NLP</span>
+                  <span>Express</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn small">View Demo</a>
+                  <a href="#" class="btn small outline">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cta-center">
+            <a href="#" class="btn primary">View All Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section">
+        <div class="container">
+          <h2 class="section-title">Services</h2>
+          <div class="services-content">
+            <div class="services-intro">
+              <p>
+                I offer a range of development services to help businesses and
+                individuals bring their digital ideas to life. My focus is on
+                creating robust, scalable, and user-friendly applications.
+              </p>
+            </div>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>
+                  Custom web applications built with modern technologies. I
+                  specialize in creating responsive, performant sites that
+                  deliver exceptional user experiences.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>API Development</h3>
+                <p>
+                  Robust, well-documented APIs that power your applications. I
+                  design RESTful services that are secure, scalable, and
+                  efficient.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3>Database Design</h3>
+                <p>
+                  Efficient database architectures tailored to your application
+                  needs. I optimize for performance, scalability, and data
+                  integrity.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3>Deployment & DevOps</h3>
+                <p>
+                  Streamlined deployment processes and infrastructure setup. I
+                  ensure your applications run smoothly in production
+                  environments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section">
+        <div class="container">
+          <h2 class="section-title">Client Testimonials</h2>
+          <div class="testimonials-slider">
+            <div class="testimonial-slide active">
+              <div class="testimonial-content">
+                <div class="quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  Working with Alex was an absolute pleasure. They delivered our
+                  e-commerce platform ahead of schedule and were incredibly
+                  responsive to our needs and feedback throughout the
+                  development process.
+                </p>
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="client-details">
+                    <h4>Sarah Johnson</h4>
+                    <p>CEO, TechRetail</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  Alex's technical knowledge and problem-solving skills are
+                  outstanding. They transformed our complex requirements into an
+                  elegant, user-friendly application that exceeded our
+                  expectations.
+                </p>
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="client-details">
+                    <h4>Michael Chen</h4>
+                    <p>CTO, InnovateTech</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  We've worked with many developers, but Alex stands out for
+                  their attention to detail and commitment to quality. They
+                  don't just write code; they create solutions that address real
+                  business needs.
+                </p>
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="client-details">
+                    <h4>Emma Rodriguez</h4>
+                    <p>Product Manager, SaaS Solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="control-btn prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button class="control-btn next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact Me</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <p>
+                I'm interested in freelance opportunities – especially ambitious
+                or large projects. However, if you have other requests or
+                questions, don't hesitate to reach out.
+              </p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Location</h4>
+                    <p>San Francisco, California</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Email</h4>
+                    <p>alex@example.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Phone</h4>
+                    <p>+1 (555) 123-4567</p>
+                  </div>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-dribbble"></i
+                ></a>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h3>Send a Message</h3>
+              <form id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                  <label for="subject">Subject</label>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                  <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+              </form>
+              <div class="form-status"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo">
+            <span class="bracket"></span>Developer<span class="bracket"></span>
+          </div>
+          <p>&copy; 2025 James Ngandu. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
