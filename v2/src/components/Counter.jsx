@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 export const Counter = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState("james");
   function handleIncrement() {
-    setCount(count + 1);
+    setCount("jany");
   }
   function handleDencrement() {
-    setCount(count - 1);
+    setCount("john");
   }
 
   return (
