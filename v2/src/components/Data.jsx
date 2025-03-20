@@ -4,7 +4,9 @@ export const Data = () => {
   const alldata = myData.map((data) => {
     return (
       <div key={data.name}>
-        <h1>{data.name}</h1> <h1>{data.age}</h1> <h1>{data.school}</h1>
+        <p>{data.name} </p>
+        <p>{data.age}</p>
+        <p>{data.school}</p>
       </div>
     );
   });
