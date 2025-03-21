@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 export const Form = () => {
-  const [userName, setUserName] = useState("mukuvi");
+  const [userName, setUserName] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("Submitted");
+    alert(`your form has been submitted ${userName}`);
   };
   return (
     <>
