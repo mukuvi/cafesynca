@@ -4,7 +4,7 @@ export const FetchData = () => {
   const [response, setResponse] = useState(null);
   useEffect(() => {
     async function userData() {
-      let myUser = await fetch("https://jsonplaceholder.typicode.com/users/1");
+      let myUser = await fetch("https://jsonplaceholder.typicode.com/users/");
       let data = await myUser.json();
       setResponse(data);
     }
@@ -13,6 +13,12 @@ export const FetchData = () => {
   if (!response) {
     return <p>Loading ...</p>;
   } else {
-    return <p>{response.name}</p>;
+    return (
+      <div>
+        {response.map((respo) => {
+          return <p key={respo.name}>{respo.name}</p>;
+        })}
+      </div>
+    );
   }
 };
