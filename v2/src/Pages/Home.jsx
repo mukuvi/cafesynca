@@ -6,8 +6,8 @@ export const Home = () => {
   return (
     <>
       <Form />
-      <Counter />
-      <Data />
+      {/* <Counter />
+      <Data /> */}
     </>
   );
 };
