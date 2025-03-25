@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafesynca</title>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Cafesynca</h1>
+        <p>Authentic Coffee Experience</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="product-grid" id="products">
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Kenya AA Coffee"
+          />
+          <h3>Kenya AA Coffee</h3>
+          <p>KSH 1,200</p>
+          <button class="btn" onclick="addToCart('Kenya AA Coffee', 1200)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Ethiopian Yirgacheffe"
+          />
+          <h3>Ethiopian Yirgacheffe</h3>
+          <p>KSH 1,500</p>
+          <button
+            class="btn"
+            onclick="addToCart('Ethiopian Yirgacheffe', 1500)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Guatemalan Antigua"
+          />
+          <h3>Guatemalan Antigua</h3>
+          <p>KSH 1,800</p>
+          <button class="btn" onclick="addToCart('Guatemalan Antigua', 1800)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <div id="total">Total: KSH 0</div>
+        <button class="btn" onclick="checkout()">Checkout with Paystack</button>
+      </div>
+    </div>
+
+    <script src="../config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
