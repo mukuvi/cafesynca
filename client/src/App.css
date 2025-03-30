@@ -1,1 +1,4 @@
 @import "tailwindcss";
+@theme {
+  --color-regal-blue: #8b4513;
+}
