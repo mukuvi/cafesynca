@@ -2,6 +2,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/hero";
 import { Shop } from "../components/Shop";
+import { Subscribe } from "../components/Subscribe";
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
       <Header />
       <Hero />
       <Shop />
+      <Subscribe />
       <Footer />
     </div>
   );
