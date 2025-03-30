@@ -9,7 +9,7 @@ export const Header = () => {
 
       <nav className="bg-white flex justify-between items-center w-full p-4 shadow-md">
         <div className="ml-2">
-          <h1 className="text-2xl font-bold text-gray-800">Cafesynca</h1>
+          <h1 className="text-xl font-bold text-gray-800">Cafesynca</h1>
         </div>
 
         <div className="flex gap-8">
