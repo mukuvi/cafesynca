@@ -33,7 +33,7 @@ export const Shop = () => {
                 </span>
                 <button
                   className="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded transition-colors duration-300"
-                  onClick={() => console.log("Added to cart:", product.name)}
+                  onClick={() => console.log("Added to cart:", product.name)} // Add your cart logic here
                 >
                   Add to Cart
                 </button>
