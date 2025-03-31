@@ -28,11 +28,11 @@ export const Shop = () => {
               </h3>
               <p className="text-gray-600 mb-4">{product.description}</p>
               <div className="flex justify-between items-center">
-                <span className="text-amber-700 font-bold text-lg">
+                <span className="text-[#333] font-bold text-lg">
                   ${product.price.toFixed(2)}
                 </span>
                 <button
-                  className="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded transition-colors duration-300"
+                  className="bg-[#3e2723] hover:bg-amber-800 text-white px-4 py-2 rounded transition-colors duration-300"
                   onClick={() => console.log("Added to cart:", product.name)} // Add your cart logic here
                 >
                   Add to Cart

@@ -1,3 +1,4 @@
+import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi";
 export const Header = () => {
   return (
     <div>
@@ -28,16 +29,18 @@ export const Header = () => {
             </h2>
           </div>
 
-          <div className="flex gap-8 mr-4">
-            <h2 className="text-lg text-gray-800 hover:text-amber-900 cursor-pointer">
-              Search
-            </h2>
-            <h2 className="text-lg text-gray-800 hover:text-amber-900 cursor-pointer">
-              Account
-            </h2>
-            <h2 className="text-lg text-gray-800 hover:text-amber-900 cursor-pointer">
-              Cart
-            </h2>
+          <div className="flex gap-6 mr-4">
+            <button className="flex items-center gap-2 text-lg text-gray-800 hover:text-amber-900 transition-colors">
+              <FiSearch className="text-xl" />
+            </button>
+
+            <button className="flex items-center gap-2 text-lg text-gray-800 hover:text-amber-900 transition-colors">
+              <FiUser className="text-xl" />
+            </button>
+
+            <button className="flex items-center gap-2 text-lg text-gray-800 hover:text-amber-900 transition-colors">
+              <FiShoppingCart className="text-xl" />
+            </button>
           </div>
         </nav>
       </div>
