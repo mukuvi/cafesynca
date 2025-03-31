@@ -1,4 +1,4 @@
-const CodingClub = () => {
+const CodingClub = ({ onJoinProject }) => {
   const projects = [
     {
       id: 1,
@@ -17,15 +17,6 @@ const CodingClub = () => {
       members: 8,
       image:
         "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80",
-    },
-    {
-      id: 3,
-      name: "Coffee Recipe API",
-      description: "Open-source database of coffee recipes",
-      tech: ["Node.js", "MongoDB", "GraphQL"],
-      members: 15,
-      image:
-        "https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80",
     },
   ];
 
@@ -67,7 +58,10 @@ const CodingClub = () => {
                   <span className="text-sm text-gray-500">
                     👥 {project.members} members
                   </span>
-                  <button className="px-4 py-2 bg-[#6f4e37] text-white rounded-lg hover:bg-[#5a3d2a] transition">
+                  <button
+                    onClick={() => onJoinProject(project.name)}
+                    className="px-4 py-2 bg-[#6f4e37] text-white rounded-lg hover:bg-[#5a3d2a] transition"
+                  >
                     Join Project
                   </button>
                 </div>
