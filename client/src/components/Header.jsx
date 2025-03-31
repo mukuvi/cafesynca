@@ -6,7 +6,6 @@ export const Header = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      {/* Top announcement bar */}
       <div
         style={{ backgroundColor: "#3e2723" }}
         className="text-center bg-amber-900 text-white p-1 sm:p-2"
@@ -16,9 +15,7 @@ export const Header = () => {
         </p>
       </div>
 
-      {/* Main navigation */}
       <nav className="bg-white flex justify-between items-center w-full p-4 shadow-md">
-        {/* Mobile menu button (hidden on desktop) */}
         <button
           className="md:hidden ml-2 text-gray-800"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -26,14 +23,12 @@ export const Header = () => {
           {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
 
-        {/* Logo/Brand (centered on mobile) */}
         <div className="md:ml-2 mx-auto md:mx-0">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
             Cafesynca
           </h1>
         </div>
 
-        {/* Desktop Navigation Links (hidden on mobile) */}
         <div className="hidden md:flex gap-6 lg:gap-8">
           <a
             href="#"
@@ -55,7 +50,6 @@ export const Header = () => {
           </a>
         </div>
 
-        {/* Icons (search, account, cart) */}
         <div className="flex gap-4 sm:gap-6 mr-2 sm:mr-4">
           <button className="text-gray-800 hover:text-amber-900 transition-colors">
             <FiSearch className="text-xl" />
@@ -69,7 +63,6 @@ export const Header = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu (slides down) */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="flex flex-col p-4 space-y-4">

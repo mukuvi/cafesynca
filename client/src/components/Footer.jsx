@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="bg-[#3e2723] text-white pt-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
-          <div className="footer-col">
+          <div className="footer-col ">
             <h3 className="text-amber-300 text-xl font-medium mb-5">Shop</h3>
             <ul className="space-y-3">
               <li>
