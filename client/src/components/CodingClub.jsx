@@ -77,7 +77,7 @@ const CodingClub = ({ onJoinProject }) => {
           Code & Collaborate
         </h2>
         <p className="text-gray-600 mb-6">
-          {/* Join open-source projects and collaborate with developers worldwide */}
+          Join open-source projects and collaborate with developers worldwide
         </p>
 
         <div className="space-y-6">
